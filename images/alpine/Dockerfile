@@ -12,7 +12,7 @@ ENV JAVA_VERSION_MAJOR=8 \
 
 # Install dependencies
 RUN apk upgrade --update && \
-    apk add --update wget curl ca-certificates openssl bash git screen util-linux sudo shadow && \
+    apk add --update wget curl ca-certificates openssl nss bash git screen util-linux sudo shadow && \
     update-ca-certificates
 
 # Install Java8
